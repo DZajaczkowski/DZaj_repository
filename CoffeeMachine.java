@@ -82,7 +82,6 @@ class Mechanics {
                 System.out.println();
                 System.out.println("Wrong input!");
                 System.out.println();
-
                 break;
         }
     }
