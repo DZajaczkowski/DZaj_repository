@@ -34,26 +34,26 @@ class Mechanics {
     }
 
     void processInputCommands(String input) {
-            switch (state) {
-                case CHOOSING_AN_ACTION:
-                    choosingAnAction(input);
-                    break;
-                case CHOOSING_A_COFFEE:
-                    choosingACoffee(input);
-                    break;
-                case FILL_WATER:
-                    fillWater(input);
-                    break;
-                case FILL_MILK:
-                    fillMilk(input);
-                    break;
-                case FILL_BEANS:
-                    fillBeans(input);
-                    break;
-                case FILL_CUPS:
-                    fillCups(input);
-                    break;
-            }
+        switch (state) {
+            case CHOOSING_AN_ACTION:
+                choosingAnAction(input);
+                break;
+            case CHOOSING_A_COFFEE:
+                choosingACoffee(input);
+                break;
+            case FILL_WATER:
+                fillWater(input);
+                break;
+            case FILL_MILK:
+                fillMilk(input);
+                break;
+            case FILL_BEANS:
+                fillBeans(input);
+                break;
+            case FILL_CUPS:
+                fillCups(input);
+                break;
+        }
     }
 
     private void choosingAnAction(String input) {
@@ -123,7 +123,7 @@ class Mechanics {
             System.out.println("Sorry, not enough water!");
         } else if (milk - cupMilk < 0) {
             System.out.println("Sorry, not enough milk!");
-        } else if (beans - cupBeans <0) {
+        } else if (beans - cupBeans < 0) {
             System.out.println("Sorry, not enough coffee beans!");
         }
         state = State.CHOOSING_AN_ACTION;
