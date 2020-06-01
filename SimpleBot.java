@@ -44,7 +44,7 @@ public class SimpleBot {
     }
 
     static void test() {
-        System.out.println("Let's test your programming knowledge.");
+        System.out.println("Let's test your memes knowledge.");
         System.out.println("Why are we still here?");
         System.out.println("1. To eat pancakes.");
         System.out.println("2. To watch anime.");
