@@ -11,16 +11,16 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         char[] board = new char[9];
         Arrays.fill(board, ' ');
-        Mechanics.printBoard(board);
-        while (Objects.equals(Mechanics.status(board), "Game not finished")) {
+        Commands.printBoard(board);
+        while (Objects.equals(Commands.status(board), "Game not finished")) {
             try {
                 System.out.print("Enter the coordinates: ");
-                Mechanics.move(board, sc.nextInt(), sc.nextInt());
+                Commands.move(board, sc.nextInt(), sc.nextInt());
             } catch (InputMismatchException e) {
                 sc.nextLine();
                 System.out.println("You should enter numbers!");
             }
         }
-        System.out.println(Mechanics.status(board));
+        System.out.println(Commands.status(board));
     }
 }
